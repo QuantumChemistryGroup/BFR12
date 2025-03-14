@@ -1,0 +1,9 @@
+dHf(AM1) = 37.634090
+dHf(RM1) = 15.911950
+dHf(PM3) = 41.397810
+dHf(PM6) = 4.180740
+dHf(PM6-D3) = -19.255390
+dHf(PM6-D3H4) = 10.103810
+dHf(PM6-D3H4X) = 13.169620
+dHf(PM7) = 2.655810
+dHf(group aaproach) = 8.200000

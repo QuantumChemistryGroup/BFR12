@@ -1,0 +1,87 @@
+---------------------------------------------------------------------
+Results for 12-DiBrPropane_1.all 
+
+Average dfH = -16.91 
+
+Uncertainty = 0.3
+Computational contribution = 0.22
+Experimental contribution = 0.2
+Standard deviation (unweighted) = 0.15
+---------------------------------------------------------------------
+Number of reactions with all coeficients ≤  10.0 : 15  of  15
+Parameters:
+h1 = 3.55 
+h2 = 4.62 
+
+Summ of all weights = 3.8
+---------------------------------------------------------------------
+Average values and MSE of reaction characteristics:
+
+                         Mean       St dev          Min          Max
+             dfH       -16.91         0.11       -17.22       -16.73
+        drE_corr         3.29         1.19         0.06         6.84
+        n+dn_red         4.74         1.22         3.00        10.00
+             drH         3.72         2.86        -1.80        12.86
+          dHconf        -0.08         0.04        -0.10         0.02
+         dHtherm         0.52         0.28        -0.07         1.49
+         drE_CBS         3.23         2.58        -1.72        11.31
+          drE_IT         0.07         0.04        -0.03         0.17
+          drE_CV        -0.01         0.01        -0.05         0.00
+             u/2         0.10         0.06         0.05         0.29
+
+
+---------------------------------------------------------------------
+15 reactions with the best weights:
+---------------------------------------------------------------------
+      weight     dfH  drE_corr  dn  n+|dn|      u     drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                  reaction_names
+1   1.000000 -16.802     4.151   0    4.00  0.114   4.534  -0.105    0.716    3.850  -0.013   0.086                          Br2C3H6+Methane(g)->2*Ethyl bromide(g)
+7   0.590894 -16.921     2.887   0    6.00  0.133   1.910  -0.105    0.256    1.717  -0.028   0.070              Br2C3H6+2*Ethane(g)->Propane(g)+2*Ethyl bromide(g)
+4   0.366856 -16.848     5.578   0    6.00  0.099  10.235  -0.105    1.028    9.177  -0.020   0.155              Br2C3H6+2*Methane(g)->Propane(g)+2*Bromomethane(g)
+8   0.333429 -16.839     2.805   0    6.00  0.179   0.372  -0.105    0.330    0.120  -0.017   0.044           Br2C3H6+Ethane(g)+Bromomethane(g)->3*Ethyl bromide(g)
+2   0.275077 -17.072     2.185   0    4.00  0.291   2.904  -0.043    0.247    2.664  -0.017   0.053              Br2C3H6+Ethane(g)->Propane(g)+1,2-Dibromoethane(g)
+3   0.270277 -16.990     2.103   0    4.00  0.296   1.366  -0.043    0.322    1.066  -0.005   0.026  Br2C3H6+Bromomethane(g)->Ethyl bromide(g)+1,2-Dibromoethane(g)
+5   0.262172 -17.013     2.817   0    3.00  0.288   4.216  -0.043    0.477    3.731  -0.009   0.060         2*Br2C3H6+Methane(g)->Propane(g)+2*1,2-Dibromoethane(g)
+0   0.199783 -16.953     3.449   0    4.00  0.289   5.528  -0.043    0.707    4.797  -0.001   0.068              Br2C3H6+Methane(g)->Ethane(g)+1,2-Dibromoethane(g)
+14  0.179140 -17.068     1.896   0    3.33  0.384   2.210  -0.022    0.294    1.914  -0.005   0.029  3*Br2C3H6+2*Bromomethane(g)->Propane(g)+4*1,2-Dibromoethane(g)
+11  0.134569 -17.065     1.752   0    4.00  0.433   1.863  -0.012    0.317    1.540   0.001   0.017   2*Br2C3H6+2*Bromomethane(g)->Ethane(g)+3*1,2-Dibromoethane(g)
+12  0.049859 -16.757     2.724   0    8.00  0.248  -1.166  -0.105    0.404   -1.476  -0.006   0.017        Br2C3H6+Propane(g)+2*Bromomethane(g)->4*Ethyl bromide(g)
+6   0.045748 -17.178     0.055   0    6.00  0.581  -1.802   0.019   -0.073   -1.716   0.002  -0.034    Br2C3H6+2*Bromomethane(g)->Methane(g)+2*1,2-Dibromoethane(g)
+9   0.040579 -17.223     1.482   0    6.00  0.586   3.898   0.019    0.239    3.610  -0.005   0.035   Br2C3H6+2*Ethyl bromide(g)->Propane(g)+2*1,2-Dibromoethane(g)
+10  0.039314 -16.729     6.842   0    8.00  0.111  12.859  -0.105    1.488   11.309  -0.004   0.171             Br2C3H6+3*Methane(g)->2*Ethane(g)+2*Bromomethane(g)
+13  0.012631 -17.086     3.050   0   10.00  0.182   4.987  -0.105    0.108    4.911  -0.051   0.124             Br2C3H6+4*Ethane(g)->3*Propane(g)+2*Bromomethane(g)
+
+
+
+
+---------------------------------------------------------------------
+10 reactions with the worst weights:
+---------------------------------------------------------------------
+      weight     dfH  drE_corr  dn  n+|dn|      u     drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                  reaction_names
+13  0.012631 -17.086     3.050   0   10.00  0.182   4.987  -0.105    0.108    4.911  -0.051   0.124             Br2C3H6+4*Ethane(g)->3*Propane(g)+2*Bromomethane(g)
+10  0.039314 -16.729     6.842   0    8.00  0.111  12.859  -0.105    1.488   11.309  -0.004   0.171             Br2C3H6+3*Methane(g)->2*Ethane(g)+2*Bromomethane(g)
+9   0.040579 -17.223     1.482   0    6.00  0.586   3.898   0.019    0.239    3.610  -0.005   0.035   Br2C3H6+2*Ethyl bromide(g)->Propane(g)+2*1,2-Dibromoethane(g)
+6   0.045748 -17.178     0.055   0    6.00  0.581  -1.802   0.019   -0.073   -1.716   0.002  -0.034    Br2C3H6+2*Bromomethane(g)->Methane(g)+2*1,2-Dibromoethane(g)
+12  0.049859 -16.757     2.724   0    8.00  0.248  -1.166  -0.105    0.404   -1.476  -0.006   0.017        Br2C3H6+Propane(g)+2*Bromomethane(g)->4*Ethyl bromide(g)
+11  0.134569 -17.065     1.752   0    4.00  0.433   1.863  -0.012    0.317    1.540   0.001   0.017   2*Br2C3H6+2*Bromomethane(g)->Ethane(g)+3*1,2-Dibromoethane(g)
+14  0.179140 -17.068     1.896   0    3.33  0.384   2.210  -0.022    0.294    1.914  -0.005   0.029  3*Br2C3H6+2*Bromomethane(g)->Propane(g)+4*1,2-Dibromoethane(g)
+0   0.199783 -16.953     3.449   0    4.00  0.289   5.528  -0.043    0.707    4.797  -0.001   0.068              Br2C3H6+Methane(g)->Ethane(g)+1,2-Dibromoethane(g)
+5   0.262172 -17.013     2.817   0    3.00  0.288   4.216  -0.043    0.477    3.731  -0.009   0.060         2*Br2C3H6+Methane(g)->Propane(g)+2*1,2-Dibromoethane(g)
+3   0.270277 -16.990     2.103   0    4.00  0.296   1.366  -0.043    0.322    1.066  -0.005   0.026  Br2C3H6+Bromomethane(g)->Ethyl bromide(g)+1,2-Dibromoethane(g)
+
+
+
+
+---------------------------------------------------------------------
+10 reactions with the worst dHf:
+---------------------------------------------------------------------
+      weight     dfH  drE_corr  dn  n+|dn|      u    drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                  reaction_names
+9   0.040579 -17.223     1.482   0    6.00  0.586  3.898   0.019    0.239    3.610  -0.005   0.035   Br2C3H6+2*Ethyl bromide(g)->Propane(g)+2*1,2-Dibromoethane(g)
+6   0.045748 -17.178     0.055   0    6.00  0.581 -1.802   0.019   -0.073   -1.716   0.002  -0.034    Br2C3H6+2*Bromomethane(g)->Methane(g)+2*1,2-Dibromoethane(g)
+13  0.012631 -17.086     3.050   0   10.00  0.182  4.987  -0.105    0.108    4.911  -0.051   0.124             Br2C3H6+4*Ethane(g)->3*Propane(g)+2*Bromomethane(g)
+2   0.275077 -17.072     2.185   0    4.00  0.291  2.904  -0.043    0.247    2.664  -0.017   0.053              Br2C3H6+Ethane(g)->Propane(g)+1,2-Dibromoethane(g)
+14  0.179140 -17.068     1.896   0    3.33  0.384  2.210  -0.022    0.294    1.914  -0.005   0.029  3*Br2C3H6+2*Bromomethane(g)->Propane(g)+4*1,2-Dibromoethane(g)
+11  0.134569 -17.065     1.752   0    4.00  0.433  1.863  -0.012    0.317    1.540   0.001   0.017   2*Br2C3H6+2*Bromomethane(g)->Ethane(g)+3*1,2-Dibromoethane(g)
+5   0.262172 -17.013     2.817   0    3.00  0.288  4.216  -0.043    0.477    3.731  -0.009   0.060         2*Br2C3H6+Methane(g)->Propane(g)+2*1,2-Dibromoethane(g)
+3   0.270277 -16.990     2.103   0    4.00  0.296  1.366  -0.043    0.322    1.066  -0.005   0.026  Br2C3H6+Bromomethane(g)->Ethyl bromide(g)+1,2-Dibromoethane(g)
+0   0.199783 -16.953     3.449   0    4.00  0.289  5.528  -0.043    0.707    4.797  -0.001   0.068              Br2C3H6+Methane(g)->Ethane(g)+1,2-Dibromoethane(g)
+7   0.590894 -16.921     2.887   0    6.00  0.133  1.910  -0.105    0.256    1.717  -0.028   0.070              Br2C3H6+2*Ethane(g)->Propane(g)+2*Ethyl bromide(g)

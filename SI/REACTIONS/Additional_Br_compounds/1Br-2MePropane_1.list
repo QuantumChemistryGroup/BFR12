@@ -1,0 +1,109 @@
+---------------------------------------------------------------------
+Results for 1Br-2MePropane_1.all 
+
+Average dfH = -27.24 
+
+Uncertainty = 0.27
+Computational contribution = 0.25
+Experimental contribution = 0.11
+Standard deviation (unweighted) = 0.23
+---------------------------------------------------------------------
+Number of reactions with all coeficients ≤  10.0 : 37  of  37
+Parameters:
+h1 = 2.32 
+h2 = 3.11 
+
+Summ of all weights = 8.05
+---------------------------------------------------------------------
+Average values and MSE of reaction characteristics:
+
+                         Mean       St dev          Min          Max
+             dfH       -27.24         0.12       -27.79       -26.57
+        drE_corr         2.10         0.99        -3.93         6.31
+        n+dn_red         3.75         0.71         2.67        12.00
+             drH         2.75         1.81       -10.53        11.46
+          dHconf         0.14         0.13        -0.09         0.78
+         dHtherm         0.26         0.27        -0.80         1.54
+         drE_CBS         2.32         1.52        -9.79         9.75
+          drE_IT         0.04         0.02        -0.20         0.11
+          drE_CV        -0.00         0.01        -0.02         0.03
+             u/2         0.06         0.03         0.03         0.45
+
+
+---------------------------------------------------------------------
+37 reactions with the best weights:
+---------------------------------------------------------------------
+          weight     dfH  drE_corr  dn  n+|dn|      u     drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                      reaction_names
+25  1.000000e+00 -27.166     2.357   0    3.33  0.072   2.574   0.032    0.334    2.173  -0.001   0.036           3*BrC4H9+2*Methane(g)->2*iso-Butane(g)+3*Ethyl bromide(g)
+22  7.956169e-01 -27.093     3.122   0    3.33  0.065   3.926   0.199    0.547    3.134   0.001   0.045             3*BrC4H9+2*Methane(g)->2*n-Butane(g)+3*Ethyl bromide(g)
+5   7.680506e-01 -27.312     1.083   0    4.00  0.091   0.214   0.032   -0.074    0.247  -0.011   0.020                    BrC4H9+Ethane(g)->iso-Butane(g)+Ethyl bromide(g)
+0   7.058596e-01 -27.202     2.230   0    4.00  0.078   2.241   0.282    0.245    1.689  -0.009   0.034                      BrC4H9+Ethane(g)->n-Butane(g)+Ethyl bromide(g)
+6   6.100009e-01 -27.275     2.428   0    4.00  0.080   4.376   0.032    0.312    3.976  -0.007   0.063                    BrC4H9+Methane(g)->iso-Butane(g)+Bromomethane(g)
+4   4.678370e-01 -27.165     3.575   0    4.00  0.064   6.403   0.282    0.630    5.420  -0.005   0.076                      BrC4H9+Methane(g)->n-Butane(g)+Bromomethane(g)
+3   3.942148e-01 -26.995     3.642   0    4.00  0.068   4.672   0.032    0.691    3.892   0.005   0.052                      BrC4H9+Methane(g)->Propane(g)+Ethyl bromide(g)
+10  3.712794e-01 -27.387     0.731   0    3.00  0.158   0.711   0.063   -0.078    0.720  -0.005   0.011            2*BrC4H9+Ethane(g)->2*iso-Butane(g)+1,2-Dibromoethane(g)
+35  3.519547e-01 -27.314     1.369   0    2.67  0.153   1.891   0.063    0.126    1.683   0.000   0.019       6*BrC4H9+2*Methane(g)->5*iso-Butane(g)+3*1,2-Dibromoethane(g)
+11  2.983599e-01 -27.278     1.878   0    3.00  0.151   2.738   0.313    0.240    2.163  -0.003   0.025              2*BrC4H9+Ethane(g)->2*n-Butane(g)+1,2-Dibromoethane(g)
+23  2.621267e-01 -27.493     0.516   0    5.00  0.116   0.835   0.032   -0.301    1.087  -0.022   0.039             2*BrC4H9+3*Ethane(g)->3*iso-Butane(g)+2*Bromomethane(g)
+36  2.611169e-01 -27.223     2.325   0    2.67  0.148   3.580   0.271    0.391    2.887   0.001   0.030         6*BrC4H9+2*Methane(g)->5*n-Butane(g)+3*1,2-Dibromoethane(g)
+27  2.553809e-01 -27.328     2.237   0    5.00  0.092   3.876   0.407    0.177    3.253  -0.020   0.059               2*BrC4H9+3*Ethane(g)->3*n-Butane(g)+2*Bromomethane(g)
+17  2.290142e-01 -27.486     0.083   0    4.00  0.177  -0.207   0.063   -0.231   -0.038  -0.005   0.004         2*BrC4H9+2*Propane(g)->3*iso-Butane(g)+1,2-Dibromoethane(g)
+19  1.930488e-01 -27.322     1.804   0    4.00  0.163   2.835   0.438    0.247    2.129  -0.003   0.024           2*BrC4H9+2*Propane(g)->3*n-Butane(g)+1,2-Dibromoethane(g)
+33  1.847984e-01 -27.334     0.839   0    3.00  0.222   0.648   0.079    0.033    0.535   0.004  -0.003  4*BrC4H9+2*Bromomethane(g)->3*iso-Butane(g)+3*1,2-Dibromoethane(g)
+34  1.543738e-01 -27.100     2.975   0    3.50  0.151   4.513   0.063    0.572    3.833   0.006   0.039          4*BrC4H9+3*Methane(g)->5*Propane(g)+2*1,2-Dibromoethane(g)
+31  1.515463e-01 -27.252     1.699   0    3.00  0.219   2.169   0.266    0.272    1.618   0.005   0.008    4*BrC4H9+2*Bromomethane(g)->3*n-Butane(g)+3*1,2-Dibromoethane(g)
+26  9.840664e-02 -27.018     4.356   0    5.00  0.072   7.522   0.032    0.847    6.556   0.001   0.086               2*BrC4H9+3*Methane(g)->3*Propane(g)+2*Bromomethane(g)
+28  8.604787e-02 -27.189     2.027   0    5.00  0.166   2.545   0.063    0.227    2.233  -0.005   0.027             2*BrC4H9+3*Ethane(g)->4*Propane(g)+1,2-Dibromoethane(g)
+7   7.859488e-02 -27.462     0.380   0    4.00  0.300   1.207   0.095   -0.083    1.192   0.001   0.002         BrC4H9+Ethyl bromide(g)->iso-Butane(g)+1,2-Dibromoethane(g)
+1   6.439827e-02 -27.353     1.527   0    4.00  0.296   3.235   0.344    0.236    2.637   0.002   0.016           BrC4H9+Ethyl bromide(g)->n-Butane(g)+1,2-Dibromoethane(g)
+2   6.431859e-02 -27.182     1.594   0    4.00  0.293   1.503   0.095    0.297    1.108   0.012  -0.009             BrC4H9+Bromomethane(g)->Propane(g)+1,2-Dibromoethane(g)
+12  5.917054e-02 -27.114     2.378   0    6.00  0.109   2.048   0.032    0.231    1.760  -0.011   0.036                   BrC4H9+2*Ethane(g)->2*Propane(g)+Ethyl bromide(g)
+8   4.965348e-02 -27.510    -0.213   0    6.00  0.159  -1.620   0.032   -0.379   -1.267  -0.011   0.005               BrC4H9+2*Propane(g)->2*iso-Butane(g)+Ethyl bromide(g)
+9   4.844198e-02 -27.290     2.081   0    6.00  0.129   2.434   0.532    0.258    1.619  -0.007   0.032                 BrC4H9+2*Propane(g)->2*n-Butane(g)+Ethyl bromide(g)
+13  2.039143e-02 -26.950     2.215   0    6.00  0.193  -1.028   0.032    0.379   -1.434   0.012  -0.017                        BrC4H9+2*Bromomethane(g)->3*Ethyl bromide(g)
+14  1.485532e-02 -26.876     4.906   0    6.00  0.084   7.296   0.032    1.151    6.025   0.020   0.068                   BrC4H9+2*Methane(g)->2*Ethane(g)+Ethyl bromide(g)
+30  5.629458e-03 -26.951     4.555   0    6.00  0.162   7.793   0.063    1.147    6.498   0.026   0.059             2*BrC4H9+4*Methane(g)->5*Ethane(g)+1,2-Dibromoethane(g)
+29  5.614738e-03 -27.176     1.162   0    6.00  0.442   0.462   0.126    0.366   -0.015   0.029  -0.044      2*BrC4H9+4*Bromomethane(g)->3*Ethane(g)+3*1,2-Dibromoethane(g)
+15  1.252206e-03 -27.196     2.460   0    8.00  0.146   3.586   0.032    0.157    3.357  -0.023   0.063                    BrC4H9+3*Ethane(g)->3*Propane(g)+Bromomethane(g)
+20  1.023858e-03 -27.461     2.014   0    8.00  0.179   4.166   0.781    0.197    3.149  -0.017   0.056                  BrC4H9+3*Propane(g)->3*n-Butane(g)+Bromomethane(g)
+18  7.842032e-04 -27.789    -1.428   0    8.00  0.227  -1.917   0.032   -0.759   -1.184  -0.022   0.016                BrC4H9+3*Propane(g)->3*iso-Butane(g)+Bromomethane(g)
+16  1.243923e-04 -27.415     0.974   0    8.00  0.603   4.035   0.157    0.214    3.652   0.012   0.000      BrC4H9+3*Ethyl bromide(g)->2*Propane(g)+2*1,2-Dibromoethane(g)
+21  8.440161e-05 -26.839     6.252   0    8.00  0.102  11.458   0.032    1.537    9.754   0.025   0.110                    BrC4H9+3*Methane(g)->3*Ethane(g)+Bromomethane(g)
+24  1.763447e-08 -26.575     6.311   0   10.00  0.641   5.309  -0.092    1.168    4.133  -0.003   0.103      BrC4H9+2*Methane(g)+2*1,2-Dibromoethane(g)->5*Ethyl bromide(g)
+32  2.282936e-10 -27.512    -3.929   0   12.00  0.890 -10.534   0.219   -0.804   -9.785   0.034  -0.198       BrC4H9+5*Bromomethane(g)->3*Methane(g)+3*1,2-Dibromoethane(g)
+
+
+
+
+---------------------------------------------------------------------
+10 reactions with the worst weights:
+---------------------------------------------------------------------
+          weight     dfH  drE_corr  dn  n+|dn|      u     drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                  reaction_names
+32  2.282936e-10 -27.512    -3.929   0    12.0  0.890 -10.534   0.219   -0.804   -9.785   0.034  -0.198   BrC4H9+5*Bromomethane(g)->3*Methane(g)+3*1,2-Dibromoethane(g)
+24  1.763447e-08 -26.575     6.311   0    10.0  0.641   5.309  -0.092    1.168    4.133  -0.003   0.103  BrC4H9+2*Methane(g)+2*1,2-Dibromoethane(g)->5*Ethyl bromide(g)
+21  8.440161e-05 -26.839     6.252   0     8.0  0.102  11.458   0.032    1.537    9.754   0.025   0.110                BrC4H9+3*Methane(g)->3*Ethane(g)+Bromomethane(g)
+16  1.243923e-04 -27.415     0.974   0     8.0  0.603   4.035   0.157    0.214    3.652   0.012   0.000  BrC4H9+3*Ethyl bromide(g)->2*Propane(g)+2*1,2-Dibromoethane(g)
+18  7.842032e-04 -27.789    -1.428   0     8.0  0.227  -1.917   0.032   -0.759   -1.184  -0.022   0.016            BrC4H9+3*Propane(g)->3*iso-Butane(g)+Bromomethane(g)
+20  1.023858e-03 -27.461     2.014   0     8.0  0.179   4.166   0.781    0.197    3.149  -0.017   0.056              BrC4H9+3*Propane(g)->3*n-Butane(g)+Bromomethane(g)
+15  1.252206e-03 -27.196     2.460   0     8.0  0.146   3.586   0.032    0.157    3.357  -0.023   0.063                BrC4H9+3*Ethane(g)->3*Propane(g)+Bromomethane(g)
+29  5.614738e-03 -27.176     1.162   0     6.0  0.442   0.462   0.126    0.366   -0.015   0.029  -0.044  2*BrC4H9+4*Bromomethane(g)->3*Ethane(g)+3*1,2-Dibromoethane(g)
+30  5.629458e-03 -26.951     4.555   0     6.0  0.162   7.793   0.063    1.147    6.498   0.026   0.059         2*BrC4H9+4*Methane(g)->5*Ethane(g)+1,2-Dibromoethane(g)
+14  1.485532e-02 -26.876     4.906   0     6.0  0.084   7.296   0.032    1.151    6.025   0.020   0.068               BrC4H9+2*Methane(g)->2*Ethane(g)+Ethyl bromide(g)
+
+
+
+
+---------------------------------------------------------------------
+10 reactions with the worst dHf:
+---------------------------------------------------------------------
+          weight     dfH  drE_corr  dn  n+|dn|      u     drH  dHconf  dHtherm  drE_CBS  drE_CV  drE_IT                                                  reaction_names
+18  7.842032e-04 -27.789    -1.428   0     8.0  0.227  -1.917   0.032   -0.759   -1.184  -0.022   0.016            BrC4H9+3*Propane(g)->3*iso-Butane(g)+Bromomethane(g)
+32  2.282936e-10 -27.512    -3.929   0    12.0  0.890 -10.534   0.219   -0.804   -9.785   0.034  -0.198   BrC4H9+5*Bromomethane(g)->3*Methane(g)+3*1,2-Dibromoethane(g)
+8   4.965348e-02 -27.510    -0.213   0     6.0  0.159  -1.620   0.032   -0.379   -1.267  -0.011   0.005           BrC4H9+2*Propane(g)->2*iso-Butane(g)+Ethyl bromide(g)
+23  2.621267e-01 -27.493     0.516   0     5.0  0.116   0.835   0.032   -0.301    1.087  -0.022   0.039         2*BrC4H9+3*Ethane(g)->3*iso-Butane(g)+2*Bromomethane(g)
+17  2.290142e-01 -27.486     0.083   0     4.0  0.177  -0.207   0.063   -0.231   -0.038  -0.005   0.004     2*BrC4H9+2*Propane(g)->3*iso-Butane(g)+1,2-Dibromoethane(g)
+7   7.859488e-02 -27.462     0.380   0     4.0  0.300   1.207   0.095   -0.083    1.192   0.001   0.002     BrC4H9+Ethyl bromide(g)->iso-Butane(g)+1,2-Dibromoethane(g)
+20  1.023858e-03 -27.461     2.014   0     8.0  0.179   4.166   0.781    0.197    3.149  -0.017   0.056              BrC4H9+3*Propane(g)->3*n-Butane(g)+Bromomethane(g)
+16  1.243923e-04 -27.415     0.974   0     8.0  0.603   4.035   0.157    0.214    3.652   0.012   0.000  BrC4H9+3*Ethyl bromide(g)->2*Propane(g)+2*1,2-Dibromoethane(g)
+10  3.712794e-01 -27.387     0.731   0     3.0  0.158   0.711   0.063   -0.078    0.720  -0.005   0.011        2*BrC4H9+Ethane(g)->2*iso-Butane(g)+1,2-Dibromoethane(g)
+1   6.439827e-02 -27.353     1.527   0     4.0  0.296   3.235   0.344    0.236    2.637   0.002   0.016       BrC4H9+Ethyl bromide(g)->n-Butane(g)+1,2-Dibromoethane(g)

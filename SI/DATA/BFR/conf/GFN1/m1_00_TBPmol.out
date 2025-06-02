@@ -1,0 +1,746 @@
+
+       ╔════════════════════════════════════════════╗
+       ║            ___ ___ ___ ___ _____           ║
+       ║           / __| _ \ __/ __|_   _|          ║
+       ║          | (__|   / _|\__ \ | |            ║
+       ║           \___|_|_\___|___/ |_|            ║
+       ║                                            ║
+       ║  Conformer-Rotamer Ensemble Sampling Tool  ║
+       ║          based on the xTB methods          ║
+       ║                                            ║
+       ╚════════════════════════════════════════════╝
+       Version 3.0.2, Fri, 14 February 10:17:28, 02/14/2025
+       commit (53290da) compiled by 'usr@fv-az1781-845'
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+   • P.Pracht, S.Grimme, C.Bannwarth, F.Bohle, S.Ehlert,
+     G.Feldmann, J.Gorges, M.Müller, T.Neudecker, C.Plett,
+     S.Spicher, P.Steinbach, P.Wesołowski, F.Zeller,
+     J. Chem. Phys., 2024, 160, 114110.
+
+   for works involving QCG cite
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+   • C.Plett, S. Grimme,
+     Angew. Chem. Int. Ed. 2023, 62, e202214477.
+
+   for works involving MECP screening cite
+
+   • P.Pracht, C.Bannwarth, JCTC, 2022, 18 (10), 6370-6385.
+
+   Original code
+     P.Pracht, S.Grimme, Universität Bonn, MCTC
+   with help from (alphabetical order):
+     C.Bannwarth, F.Bohle, S.Ehlert, G.Feldmann, J.Gorges,
+     S.Grimme, C.Plett, P.Pracht, S.Spicher, P.Steinbach,
+     P.Wesolowski, F.Zeller
+
+   Online documentation is available at
+   https://crest-lab.github.io/crest-docs/
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU Lesser General Public License (LGPL) for more details.
+
+ Command line input:
+ $ ./crest m1_00_TBPmol.xyz --T 16 --noreftopo --entropy --gfn1
+
+  --T 16 (CPUs/Threads selected)
+  --entropy : enhanced ensemble entropy calculation
+  --gfn1               : Use of GFN1-xTB requested.
+
+> Setting up backup calculator ... done.
+ ----------------
+ Calculation info
+ ----------------
+> User-defined calculation level:
+ : xTB calculation via tblite lib
+ : GFN1-xTB level
+ :   Molecular charge    : 0
+ :   Fermi temperature   : 300.00000
+ :   Accuracy            : 1.00000
+ :   max SCC cycles      : 500
+
+
+ -----------------------------
+ Initial Geometry Optimization
+ -----------------------------
+ Geometry successfully optimized.
+
+          ┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
+          │              CREST ENTROPY SAMPLING             │
+          ┕━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┙
+
+ please cite:
+ • P.Pracht, S.Grimme, Chem. Sci., 2021, 12, 6551-6568.
+ • J.Gorges, S.Grimme, A.Hansen, P.Pracht, PCCP, 2022,24, 12249-12259.
+
+ Input structure:
+  13
+
+ H         -2.9559321604       -0.8122160334        0.0000128470
+ O         -2.6117779110        0.1027954822        0.0000123964
+ C         -1.2652511846        0.0510143774        0.0000054585
+ C         -0.5169492208        1.2275893510        0.0000031379
+ C         -0.5932942958       -1.1712919897        0.0000000360
+ Br        -1.4216853020        2.9022168351        0.0000113227
+ C          0.8670699210        1.1768926311       -0.0000048561
+ Br        -1.6585975464       -2.7610119203        0.0000036219
+ C          0.7891960648       -1.2335371971       -0.0000079529
+ H          1.4396095551        2.0943978405       -0.0000060742
+ C          1.5143214727       -0.0508019001       -0.0000104475
+ H          1.2941298585       -2.1895999962       -0.0000115806
+ Br         3.4200616263       -0.1148507195       -0.0000215593
+
+ ------------------------------------------------
+ Generating MTD length from a flexibility measure
+ ------------------------------------------------
+ Calculating GFN0-xTB WBOs   ... done.
+ Calculating NCI flexibility ... done.
+     covalent flexibility measure :   0.012
+ non-covalent flexibility measure :   0.679
+ flexibility measure :   0.042
+ t(MTD) / ps    :     5.0
+ Σ(t(MTD)) / ps :   120.0 (24 MTDs)
+
+ -----------------------------------
+ Starting trial MTD to test settings
+ -----------------------------------
+ Trial MTD 1 runtime (1.0 ps) ...        0 min,  2.114 sec
+ Estimated runtime for one MTD (5.0 ps) on a single thread: 11 sec
+ Estimated runtime for a batch of 24 MTDs on 16 threads: 21 sec
+
+******************************************************************************************
+**                         N E W   I T E R A T I O N  C Y C L E                         **
+******************************************************************************************
+
+ ------------------------------
+ Meta-Dynamics Iteration 1
+ ------------------------------
+ list of applied metadynamics Vbias parameters:
+$metadyn    0.09750   1.618
+$metadyn    0.04875   1.618
+$metadyn    0.02438   1.618
+$metadyn    0.01219   1.618
+$metadyn    0.09750   1.000
+$metadyn    0.04875   1.000
+$metadyn    0.02438   1.000
+$metadyn    0.01219   1.000
+$metadyn    0.09750   0.618
+$metadyn    0.04875   0.618
+$metadyn    0.02438   0.618
+$metadyn    0.01219   0.618
+$metadyn    0.09750   0.382
+$metadyn    0.04875   0.382
+$metadyn    0.02438   0.382
+$metadyn    0.01219   0.382
+$metadyn    0.09750   0.236
+$metadyn    0.04875   0.236
+$metadyn    0.02438   0.236
+$metadyn    0.01219   0.236
+$metadyn    0.09750   0.146
+$metadyn    0.04875   0.146
+$metadyn    0.02438   0.146
+$metadyn    0.01219   0.146
+
+  ::::::::::::: starting MTD    5 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+  ::::::::::::: starting MTD   22 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  0.1459 bohr⁻²   |
+  ::::::::::::: starting MTD    7 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+  ::::::::::::: starting MTD   24 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  0.1459 bohr⁻²   |
+  ::::::::::::: starting MTD   11 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  0.6180 bohr⁻²   |
+  ::::::::::::: starting MTD    9 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  0.6180 bohr⁻²   |
+  ::::::::::::: starting MTD   17 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  0.2361 bohr⁻²   |
+  ::::::::::::: starting MTD   18 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  0.2361 bohr⁻²   |
+  ::::::::::::: starting MTD   23 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  0.1459 bohr⁻²   |
+  ::::::::::::: starting MTD   19 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  0.2361 bohr⁻²   |
+  ::::::::::::: starting MTD   20 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  0.2361 bohr⁻²   |
+  ::::::::::::: starting MTD    1 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  1.6180 bohr⁻²   |
+  ::::::::::::: starting MTD    3 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  1.6180 bohr⁻²   |
+  ::::::::::::: starting MTD   15 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0244 Eh       |
+  |   Vbias exponent (α)   :  0.3820 bohr⁻²   |
+  ::::::::::::: starting MTD   21 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  0.1459 bohr⁻²   |
+  ::::::::::::: starting MTD   13 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0975 Eh       |
+  |   Vbias exponent (α)   :  0.3820 bohr⁻²   |
+*MTD  22 completed successfully ...        0 min, 13.786 sec
+*MTD   7 completed successfully ...        0 min, 13.819 sec
+  ::::::::::::: starting MTD    8 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+*MTD  24 completed successfully ...        0 min, 13.859 sec
+*MTD   3 completed successfully ...        0 min, 13.867 sec
+  ::::::::::::: starting MTD    4 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  1.6180 bohr⁻²   |
+*MTD  20 completed successfully ...        0 min, 13.868 sec
+*MTD  19 completed successfully ...        0 min, 13.876 sec
+*MTD  15 completed successfully ...        0 min, 13.911 sec
+  ::::::::::::: starting MTD   16 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  0.3820 bohr⁻²   |
+*MTD  23 completed successfully ...        0 min, 13.923 sec
+*MTD  11 completed successfully ...        0 min, 13.947 sec
+  ::::::::::::: starting MTD   12 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0122 Eh       |
+  |   Vbias exponent (α)   :  0.6180 bohr⁻²   |
+*MTD  18 completed successfully ...        0 min, 14.033 sec
+*MTD   5 completed successfully ...        0 min, 14.035 sec
+  ::::::::::::: starting MTD    6 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+*MTD  21 completed successfully ...        0 min, 14.065 sec
+*MTD  13 completed successfully ...        0 min, 14.077 sec
+  ::::::::::::: starting MTD   14 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  0.3820 bohr⁻²   |
+*MTD   1 completed successfully ...        0 min, 14.088 sec
+  ::::::::::::: starting MTD    2 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  1.6180 bohr⁻²   |
+*MTD   9 completed successfully ...        0 min, 14.214 sec
+  ::::::::::::: starting MTD   10 :::::::::::::
+  |   MD simulation time   :     5.0 ps       |
+  |   target T             :   300.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   dump interval(Vbias) :    1.00 ps       |
+  |   Vbias prefactor (k)  :  0.0488 Eh       |
+  |   Vbias exponent (α)   :  0.6180 bohr⁻²   |
+*MTD  17 completed successfully ...        0 min, 14.224 sec
+*MTD   4 completed successfully ...        0 min, 11.731 sec
+*MTD  16 completed successfully ...        0 min, 11.711 sec
+*MTD   8 completed successfully ...        0 min, 11.823 sec
+*MTD  12 completed successfully ...        0 min, 11.754 sec
+*MTD   2 completed successfully ...        0 min, 11.773 sec
+*MTD   6 completed successfully ...        0 min, 11.831 sec
+*MTD  14 completed successfully ...        0 min, 11.800 sec
+*MTD  10 completed successfully ...        0 min, 11.879 sec
+
+ ======================================
+ |  Multilevel Ensemble Optimization  |
+ ======================================
+ Optimizing all 1176 structures from file "crest_dynamics.trj" ...
+ ----------------------
+ crude pre-optimization
+ ----------------------
+ Optimization engine: ANCOPT
+ Hessian update type: BFGS
+ E/G convergence criteria:  0.500E-03 Eh, 0.100E-01 Eh/a0
+ maximum optimization steps: 200
+ |>0.1% |>7.6% |>15.1% |>22.5% |>30.0% |>37.5% |>45.1% |>52.6% |>60.0% |>67.5% |>75.0% |>82.6% |>90.1% |>97.5% |>100.0%
+ done.
+> 1176 of 1176 structures successfully optimized (100.0% success)
+> Total runtime for 1176 optimizations:
+ * wall-time:     0 d,  0 h,  0 min,  8.637 sec
+ *  cpu-time:     0 d,  0 h,  2 min, 14.383 sec
+ * ratio c/w:    15.559 speedup
+> Corresponding to approximately 0.007 sec per processed structure
+
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63239
+ 6 structures remain within    12.00 kcal/mol window
+ ----------------------------------
+ optimization with tight thresholds
+ ----------------------------------
+ Optimization engine: ANCOPT
+ Hessian update type: BFGS
+ E/G convergence criteria:  0.100E-05 Eh, 0.800E-03 Eh/a0
+ maximum optimization steps: 200
+ |>16.7% |>33.3% |>50.0% |>66.7% |>83.3% |>100.0%
+ done.
+> 6 of 6 structures successfully optimized (100.0% success)
+> Total runtime for 6 optimizations:
+ * wall-time:     0 d,  0 h,  0 min,  0.287 sec
+ *  cpu-time:     0 d,  0 h,  0 min,  1.267 sec
+ * ratio c/w:     4.413 speedup
+> Corresponding to approximately 0.048 sec per processed structure
+
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63240
+ 3 structures remain within     6.00 kcal/mol window
+
+========================================
+           MTD Simulations done         
+========================================
+ Collecting ensmbles.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63240
+ 3 structures remain within     6.00 kcal/mol window
+     H(298.15K)-H(0) (conf)      0.000139
+                   Cp(conf)      0.004638
+                    S(conf)      0.001024
+
+******************************************************************************************
+**                          I T E R A T I O N    C Y C L E      1                       **
+******************************************************************************************
+ -------------------------------------------
+ determining bias structures via PCA/k-Means
+ -------------------------------------------
+
+ 2 structures were selected
+ done.
+
+ -----------------------------------------------
+ determining MTD seed structures via PCA/k-Means
+ -----------------------------------------------
+
+ 2 structures were selected
+ done.
+
+
+ ==========================================================
+ Static MTDs (umbrella sampling) on 2 selected conformer(s)
+ ==========================================================
+> Using 2 constant RMSD bias potentials per MTD
+  :::::::::: starting static MTD   1 ::::::::::
+  |   MD simulation time   :     2.5 ps       |
+  |   target T             :   400.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   Vbias prefactor (k)  :  0.0010 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+  :::::::::: starting static MTD   2 ::::::::::
+  |   MD simulation time   :     2.5 ps       |
+  |   target T             :   400.0 K        |
+  |   timestep dt          :     5.0 fs       |
+  |   dump interval(trj)   :   100.0 fs       |
+  |   SHAKE algorithm      : true (all bonds) |
+  |   Vbias prefactor (k)  :  0.0010 Eh       |
+  |   Vbias exponent (α)   :  1.0000 bohr⁻²   |
+*sMTD   2 completed successfully ...        0 min, 14.643 sec
+*sMTD   1 completed successfully ...        0 min, 14.807 sec
+
+ ======================================
+ |  Multilevel Ensemble Optimization  |
+ ======================================
+ Optimizing all 48 structures from file "crest_rotamers_0.xyz" ...
+ ----------------------
+ crude pre-optimization
+ ----------------------
+ Optimization engine: ANCOPT
+ Hessian update type: BFGS
+ E/G convergence criteria:  0.500E-03 Eh, 0.100E-01 Eh/a0
+ maximum optimization steps: 200
+ |>2.1% |>10.4% |>20.8% |>31.2% |>41.7% |>50.0% |>60.4% |>70.8% |>81.2% |>91.7% |>100.0%
+ done.
+> 48 of 48 structures successfully optimized (100.0% success)
+> Total runtime for 48 optimizations:
+ * wall-time:     0 d,  0 h,  0 min,  0.328 sec
+ *  cpu-time:     0 d,  0 h,  0 min,  4.362 sec
+ * ratio c/w:    13.296 speedup
+> Corresponding to approximately 0.007 sec per processed structure
+
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63238
+ 3 structures remain within    12.00 kcal/mol window
+ ---------------------------------------
+ optimization with very tight thresholds
+ ---------------------------------------
+ Optimization engine: ANCOPT
+ Hessian update type: BFGS
+ E/G convergence criteria:  0.100E-06 Eh, 0.200E-03 Eh/a0
+ maximum optimization steps: 200
+ |>33.3% |>66.7% |>100.0%
+ done.
+> 3 of 3 structures successfully optimized (100.0% success)
+> Total runtime for 3 optimizations:
+ * wall-time:     0 d,  0 h,  0 min,  0.150 sec
+ *  cpu-time:     0 d,  0 h,  0 min,  0.795 sec
+ * ratio c/w:     5.300 speedup
+> Corresponding to approximately 0.050 sec per processed structure
+
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63240
+ 2 structures remain within     6.00 kcal/mol window
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -30.63240
+
+ Static MTD simulation iteration 1 finished
+ A total of 2 conformers (+ 0.00%) in crest_conformers.xyz
+ S(approx.) =    0.001032 cal/molK (dS = 0.02%)
+ Convergence w.r.t. conformers: T
+ Convergence w.r.t. entropy   : T
+
+     H(298.15K)-H(0) (conf)      0.000139
+                   Cp(conf)      0.004637
+                    S(conf)      0.001024
+
+
+ --------------------------
+ Final Ensemble Information
+ --------------------------
+ input  file name : crest_rotamers_2.xyz
+ output file name : crest_rotamers_3.xyz
+ number of atoms                :   13
+ number of points on xyz files  :   5
+ RMSD threshold                 :   0.1250
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ # fragment in coord            :     1
+ # bonds in reference structure :    13
+ number of reliable points      :     5
+ sorting energy window (EWIN)   :    6.0000 / kcal*mol⁻¹
+ reference state Etot           :  -30.632398630000001
+ number of doubles removed by rot/RMSD         :           2
+ total number unique points considered further :           3
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000   -30.63240    0.49999    0.99998       1       2
+       2   5.904   -30.62299    0.00002    0.00002       2       1
+T /K                                  :   298.15
+E lowest                              :   -30.63240
+ensemble average energy (kcal)        :    0.000
+ensemble entropy (J/mol K, cal/mol K) :    5.765    1.378
+ensemble free energy (kcal/mol)       :   -0.411
+population of lowest in %             :   99.998
+ number of unique conformers for further calc            2
+ list of relative energies saved as "crest.energies"
+ compare nuclear equivalencies ...
+::::::::::: conformer group all :::::::::::
+ chemical equivalencies (mag.active nuclei):
+reference atom  10 # : 2
+ magnetic equivalencies:
+
+******************************************************************************************
+**                           ENSEMBLE ENTROPY CALCULATION                               **
+******************************************************************************************
+======================================================
+ Containing 2 conformers :
+     H(298.15K)-H(0) (conf)      0.000139
+                   Cp(conf)      0.004638
+                    S(conf)      0.001024
+======================================================
+ Containing 2 conformers :
+     H(298.15K)-H(0) (conf)      0.000139
+                   Cp(conf)      0.004637
+                    S(conf)      0.001024
+======================================================
+
+ --------------------------------------
+ FINAL CALCULATION OF MOLECULAR ENTROPY
+ --------------------------------------
+
+WARNING: Not enough blocks for extrapolation.
+         Taking full ensemble entropy instead.
+
+FINAL ENTROPY (max conf.)  :      0.00102
+
+ ----------------------------------
+ Frequency Calculation and Averages
+ ----------------------------------
+ Nconf on file      : 2
+ Taken for Hessians : 2 (=100.00% total population)
+ T range  /K    :   278.15   378.15
+ scaling factor :          1.000000     
+ rotor cutoff   :         25.000000 cm⁻¹
+ imag. cutoff   :        -50.000000 cm⁻¹
+
+ Running 2 calculations ...
+ |>50.0% |>100.0%
+ done.
+ calculating averages for G and S ...    done.
+ calculating Boltzmann weights ...       done.
+ calculating reference S (bhess) ... > bhess not implemented for calculator routines
+    done.
+ calculating δSrrho ...                  done.
+
+ Coordinates for the bhess reference structure (Ångström):
+ -----------------------------------------------------------
+  13
+
+ H         -3.0024412750       -0.7651043480        0.0000277381
+ O         -2.6251032739        0.1280908548        0.0000266742
+ C         -1.2826204550        0.0406498430        0.0000091983
+ C         -0.5187479590        1.2132333279        0.0000030203
+ C         -0.5876704139       -1.1732161088       -0.0000062154
+ Br        -1.4041635644        2.8932542212       -0.0000031477
+ C          0.8672649563        1.1756800898       -0.0000072245
+ Br        -1.6045218915       -2.7927781564       -0.0000017081
+ C          0.7965841693       -1.2387306488       -0.0000185166
+ H          1.4301875947        2.0967205980       -0.0000084167
+ C          1.5136793547       -0.0523063547       -0.0000152592
+ H          1.2992110870       -2.1938635599       -0.0000246354
+ Br         3.4192425480       -0.1100329970        0.0000048424
+ -----------------------------------------------------------
+ as read from <coord>
+ Heavy-atom RMSD between lowest conformer and this reference :
+ RMSD(heavy) =        0.022458 Å
+
+ msRRHO(bhess) reference entropies:
+      278.15        103.175147
+      288.15        104.451366
+      298.15        105.709540
+      308.15        106.950387
+      318.15        108.174556
+      328.15        109.382634
+      338.15        110.575153
+      348.15        111.752597
+      358.15        112.915409
+      368.15        114.063993
+      378.15        115.198722
+
+       T/K  |S(T)|/cal/molK       |G(T)|/Eh     G_lowest/Eh    (conf)
+   -----------------------------------------------------------------
+    278.15    0.102578E+03    0.360923E-01      -30.596358         1
+    288.15    0.103842E+03    0.344619E-01      -30.598003         1
+    298.15    0.105089E+03    0.328120E-01      -30.599667         1
+    308.15    0.106320E+03    0.311429E-01      -30.601351         1
+    318.15    0.107534E+03    0.294549E-01      -30.603055         1
+    328.15    0.108732E+03    0.277481E-01      -30.604778         1
+    338.15    0.109916E+03    0.260228E-01      -30.606520         1
+    348.15    0.111085E+03    0.242793E-01      -30.608281         1
+    358.15    0.112239E+03    0.225177E-01      -30.610060         1
+    368.15    0.113380E+03    0.207383E-01      -30.611857         1
+    378.15    0.114507E+03    0.189413E-01      -30.613673         1
+   -----------------------------------------------------------------
+   NOTE: if |G(T)| is the averaged contributrion to the free energy.
+   |G(T)| used only for the higher-energetic structures (n > 2).
+   All other structures use G(T) from the respective Hessian calculations.
+
+ Quantities calculated on free energies:
+       T/K          δSrrho           Cp(T)     [H(T)-H(0)]
+   -------------------------------------------------------
+    278.15   -0.597385E+00    0.236433E-02        0.000061
+    288.15   -0.609124E+00    0.312606E-02        0.000086
+    298.15   -0.620238E+00    0.404471E-02        0.000119
+    308.15   -0.630774E+00    0.513273E-02        0.000161
+    318.15   -0.640772E+00    0.640066E-02        0.000213
+    328.15   -0.650270E+00    0.785699E-02        0.000277
+    338.15   -0.659304E+00    0.950803E-02        0.000355
+    348.15   -0.667903E+00    0.113580E-01        0.000448
+    358.15   -0.676098E+00    0.134088E-01        0.000558
+    368.15   -0.683913E+00    0.156606E-01        0.000686
+    378.15   -0.691373E+00    0.181116E-01        0.000834
+   -------------------------------------------------------
+   NOTE: δSrrho(T) = |S(T)| - Sref(T)
+
+ ----------------------
+ TEMPERATURE DEPENDENCE
+ ----------------------
+
+ Final CONFORMATIONAL quantities at given T:
+       T/K        S(total)           Cp(T)     [H(T)-H(0)]        G(total)
+   -----------------------------------------------------------------------
+    278.15       -0.596852        0.002364        0.000061        0.166075
+    288.15       -0.608376        0.003126        0.000086        0.175390
+    298.15       -0.619214        0.004045        0.000119        0.184738
+    308.15       -0.629400        0.005133        0.000161        0.194110
+    318.15       -0.638965        0.006401        0.000213        0.203500
+    328.15       -0.647935        0.007857        0.000277        0.212897
+    338.15       -0.656332        0.009508        0.000355        0.222294
+    348.15       -0.664178        0.011358        0.000448        0.231682
+    358.15       -0.671489        0.013409        0.000558        0.241051
+    368.15       -0.678279        0.015661        0.000686        0.250394
+    378.15       -0.684563        0.018112        0.000834        0.259701
+   -----------------------------------------------------------------------
+   S and Cp in cal/mol*K; H and G in kcal/mol
+   G(total) is the ensemble free energy (H-T*S) and S(total) = S(conf,extrapol.) + δSrrho
+
+ ----------------------------------------------------
+ |      FINAL MOLECULAR ENTROPY AT T= 298.15 K      |
+ ----------------------------------------------------
+     Sconf   =          0.001024
+   + δSrrho  =         -0.620238
+ -----------------------------------------------------
+ = S(total)  =         -0.619214  (cal mol⁻¹ K⁻¹)
+
+   H(T)-H(0) =          0.000119
+   G         =          0.184619   (-T*S)
+ -----------------------------------------------------
+ = G(total)  =          0.184738  (H-T*S) (kcal mol⁻¹)
+
+   Cp(total) =          0.004045  (cal mol⁻¹ K⁻¹)
+
+
+ -----------------
+ Wall Time Summary
+ -----------------
+ CREST runtime (total)               0 d,  0 h,  0 min, 54.744 sec
+ ------------------------------------------------------------------
+ Trial metadynamics (MTD)   ...        0 min,  2.115 sec (  3.864%)
+ Metadynamics (MTD)         ...        0 min, 26.218 sec ( 47.892%)
+ Geometry optimization      ...        0 min,  9.761 sec ( 17.831%)
+ Static metadynamics (sMTD) ...        0 min, 14.816 sec ( 27.064%)
+ Conf. entropy evaluation   ...        0 min,  1.663 sec (  3.039%)
+ I/O and setup              ...        0 min,  0.170 sec (  0.311%)
+ ------------------------------------------------------------------
+ * wall-time:     0 d,  0 h,  0 min, 54.744 sec
+ *  cpu-time:     0 d,  0 h,  9 min, 27.060 sec
+ * ratio c/w:    10.358 speedup
+ ------------------------------------------------------------------
+ * Total number of energy+grad calls: 35621
+
+ CREST terminated normally.
